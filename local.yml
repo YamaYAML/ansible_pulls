@@ -2,8 +2,11 @@
   connection: local
   become: true
 
+  pre_tasks:
+    - name: update repos
+      apt:
+        update_cache: yes
+      changed_when: False
+
   tasks:
-  - name: Install htop
-    apt:
-      name: htop
-      state: present
+    - include: tasks/packages.yml
