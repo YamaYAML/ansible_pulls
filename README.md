@@ -1,5 +1,5 @@
-# Ansible pull-scripts for automatic provisionning
-## Acts as one source of truth for all checked-in servers.
+# Ansible pull-scripts for automatic provisioning
+## Acts as one source of truth for all checked-in servers, next to providing hardening and maintenance
 
 [![Build Status](https://travis-ci.org/jlautenbach/ansible-pulls.svg?branch=main)](https://travis-ci.org/joemccann/dillinger)
 
