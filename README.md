@@ -9,7 +9,7 @@
 
 - No NAT holepunching necessary
 - After one pull, a cronjob will be added making sure your device checks in every 10 minutes.
-- Only when commits are made to the relevant repository, a pull request will do executed.
+- Only when commits are made to the relevant repository, a pull request will be executed.
 
 
 ## Tech
