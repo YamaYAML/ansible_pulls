@@ -1,6 +1,6 @@
 - name: "Add time-stamps to grabserial"
   lineinfile:
     path: /etc/systemd/system/seriallog\@.service
-      regexp: "ExecStart=/usr/bin/grabserial --verbose --quiet -S -d /dev/tty.usb-%i --output="/var/grabserial/serial%i-%%Y-%%m-%%d_%%H-%%M-%%S.log""
-      line: "ExecStart=/usr/bin/grabserial -T --verbose --quiet -S -d /dev/tty.usb-%i --output="/var/grabserial/serial%i-%%m-%%d.log""
+      regexp: 'ExecStart=/usr/bin/grabserial --verbose --quiet -S -d /dev/tty.usb-%i --output="/var/grabserial/serial%i-%%Y-%%m-%%d_%%H-%%M-%%S.log"'
+      line: 'ExecStart=/usr/bin/grabserial -T --verbose --quiet -S -d /dev/tty.usb-%i --output="/var/grabserial/serial%i-%%m-%%d.log"'
     backup: yes
