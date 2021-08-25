@@ -3,3 +3,7 @@ tasks:
   apt:
     name: htop
     state: present
+- name: Install timedatectl
+  apt: 
+    name: timedatectl
+    state: present
