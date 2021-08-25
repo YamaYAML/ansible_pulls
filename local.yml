@@ -11,4 +11,5 @@
   tasks:
     - include: tasks/safe-upgrade.yml
     - include: tasks/cron.yml
+    - include: tasks/packages.yml
     - include: tasks/timezone.yml
