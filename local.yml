@@ -9,10 +9,11 @@
       changed_when: False
 
   tasks:
-    - include: tasks/safe-upgrade.yml
-    - include: tasks/cron.yml
     - include: tasks/timezone.yml
+    - include: tasks/cron.yml
     - include: tasks/update-serial-systemd.yml
-    - include: tasks/install-x.yml
     - include: tasks/add_user.yml
+    - include: tasks/install-x.yml
+    - include: tasks/safe-upgrade.yml
+
 
