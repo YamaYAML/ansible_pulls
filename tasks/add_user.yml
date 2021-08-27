@@ -1,0 +1,6 @@
+- name: Add the user 'engineer' with a bash shell, appending the group 'admin' user's groups
+  ansible.builtin.user:
+    name: engineer
+    shell: /bin/bash
+    groups: admin
+    append: yes
