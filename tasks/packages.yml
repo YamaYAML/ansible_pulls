@@ -6,3 +6,11 @@
   apt: 
     name: timedatectl
     state: present
+- name: Install wireshark
+  apt:
+    name: wireshark
+    state: present
+- name: Install firefox
+  apt:
+    name: firefox
+    state: present
