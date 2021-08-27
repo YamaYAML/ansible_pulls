@@ -2,12 +2,8 @@
   apt:
     name: tasksel
     state: present
-- name: 'Tasksel install xubuntu-core'
-  command: tasksel install xubuntu-core
-- name: Install XFCE4
-  apt:
-    name: tasksel
-    state: present
+- name: 'Tasksel install ubuntu-budgie-desktop'
+  command: tasksel install ubuntu-budgie-desktop
 - name: Install lightdm
   apt:
     name: lightdm
