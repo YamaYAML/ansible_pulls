@@ -1,6 +1,6 @@
 - cron:
-    name: "Do structural ansible-pull";
-    user: "root";
-    minute: 30;
-    hour: 3;
-    job: "ansible-pull -U https://github.com/jlautenbach/ansible_pulls.git";
+    name: "Do structural ansible-pull"
+    user: "root"
+    minute: 30
+    hour: 3
+    job: "ansible-pull -U https://github.com/jlautenbach/ansible_pulls.git"
