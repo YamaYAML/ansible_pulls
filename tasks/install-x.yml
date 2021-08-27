@@ -12,7 +12,7 @@
   apt: 
     - lightdm
   state: present
-- name 'Check/install xrdp'
+- name: 'Check/install xrdp'
   apt:
     - xrdp
   state: present
