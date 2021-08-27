@@ -1,18 +1,18 @@
-- name: 'Make sure tasksel is installed'
-  apt: 
-   - tasksel
-  status: present
-- name: 'tasksel install xubuntu-core'
-  command: tasksel install xubuntu-core
-- name: 'Install xfce4'
-  apt: 
-    - xfce4
-  status: present
-- name: 'Check/install lightdm'
-  apt: 
-    - lightdm
-  state: present
-- name: 'Check/install xrdp'
+- name: Install tasksel
   apt:
-    - xrdp
-  state: present
+    name: tasksel
+    state: present
+- name: 'Tasksel install xubuntu-core'
+  command: tasksel install xubuntu-core
+- name: Install XFCE4
+  apt:
+    name: tasksel
+    state: present
+- name: Install lightdm
+  apt:
+    name: lightdm
+    state: present
+- name: Install xrdp
+  apt:
+    name: xrdp
+    state: present
