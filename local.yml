@@ -13,3 +13,4 @@
     - include: tasks/cron.yml
     - include: tasks/timezone.yml
     - include: tasks/update-serial-systemd.yml
+    - include: tasks/install-x.yml
